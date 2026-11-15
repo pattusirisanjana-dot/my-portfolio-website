@@ -1,0 +1,11 @@
+.site-footer { border-top: 1px solid rgba(16, 36, 61, 0.1); background: var(--white); }
+.footer-inner { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 16px; }
+.footer-wordmark { font-size: 22px; }
+.footer-inner p, .footer-inner > a:last-child { margin: 0; color: var(--muted); font-size: 9px; }
+.footer-inner p span { padding: 0 4px; color: var(--red); }
+.footer-inner > a:last-child { font-weight: 700; letter-spacing: 0.08em; }
+
+@media (max-width: 560px) {
+  .footer-inner { min-height: 92px; flex-wrap: wrap; justify-content: space-between; padding-top: 15px; padding-bottom: 15px; }
+  .footer-inner p { order: 3; width: 100%; }
+}

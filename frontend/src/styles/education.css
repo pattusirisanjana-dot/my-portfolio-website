@@ -1,0 +1,33 @@
+.education-section { padding: 100px 0; background: var(--navy); color: var(--white); }
+.education-section .eyebrow { color: rgba(255, 255, 255, 0.62); }
+
+.education-card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 80px 1fr auto;
+  gap: 20px;
+  padding: 39px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.education-marker { align-self: start; color: var(--blue); font-size: 27px; }
+.education-label { margin: 0 0 17px; color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: 0.17em; }
+
+.education-card h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 57px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.13;
+}
+
+.education-description { margin: 17px 0 0; color: rgba(255, 255, 255, 0.66); font-size: 13px; line-height: 1.7; }
+.education-year { align-self: end; color: rgba(255, 255, 255, 0.65); font-size: 10px; letter-spacing: 0.13em; }
+.education-year i { color: var(--red); font-style: normal; }
+
+@media (max-width: 600px) {
+  .education-section { padding: 80px 0; }
+  .education-card { grid-template-columns: 32px 1fr; gap: 12px; }
+  .education-year { grid-column: 2; margin-top: 12px; }
+}

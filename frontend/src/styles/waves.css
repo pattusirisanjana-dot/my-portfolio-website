@@ -1,0 +1,17 @@
+.wave-animation { overflow: hidden; pointer-events: none; }
+.wave-animation svg { display: block; width: 200%; height: 100%; animation: wave-drift 22s linear infinite; }
+.wave-line { fill: none; stroke: var(--blue); stroke-linecap: round; stroke-width: 1.35; vector-effect: non-scaling-stroke; }
+.wave-line--one { opacity: 0.75; }
+.wave-line--two { opacity: 0.42; stroke-width: 1; animation: wave-breathe 5s ease-in-out infinite alternate; }
+.wave-line--three { opacity: 0.28; stroke-width: 0.8; animation: wave-breathe 7s ease-in-out infinite alternate-reverse; }
+.wave-line--four { opacity: 0.34; stroke-width: 1; }
+
+@keyframes wave-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes wave-breathe {
+  from { opacity: 0.18; }
+  to { opacity: 0.58; }
+}
